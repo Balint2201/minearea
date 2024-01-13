@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LegendaryMC 2.0 - Hamarosan találkozunk</title>
+<link href="images/favicon.ico" rel="shortcut icon">
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+<script src="https://kit.fontawesome.com/95a2a01cfe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<section class="position-relative" id="home">
+<div class="bg-overlay"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 p-0">
+<div class="d-flex flex-column min-vh-100 justify-content-center px-md-5 py-5 px-4">
+<div class="title-heading text-center my-auto">
+<div class="coming-soon fw-bold display-3 text-white">
+<span>HAMAROSAN TALÁLKOZUNK</span>
+</div>
+<p class="text-white para-desc mx-auto mt-2 mb-0">Szervereink gőzerővel fejlesztés alatt állnak. <br>Csatlakozz a Discord szerverünkre, hogy nem maradj le semmilyen új információról!</p>
+<a href="https://discord.gg/KFR6VKJ2g8" target="_blank" class="btn btn-primary discord-btn"><i class="fa-brands fa-discord"></i>
+Csatlakozás</a>
+</div>
+<div class="text-center footer">
+<p class="mb-0 text-reset">© <script>document.write(new Date().getFullYear())</script> LegendaryMC</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/easy_background.js"></script>
+
+<script src="js/app.js"></script>
+<script>
+            easy_background("#home",
+                {
+                    slide: ["images/bg/1.jpg","images/bg/2.jpg","images/bg/3.jpg","images/bg/4.jpg","images/bg/5.jpg", "images/bg/6.jpg", "images/bg/7.jpg"],
+                    delay: [4000, 4000, 4000, 4000, 4000, 4000, 4000]
+                }
+            );
+        </script>
+</body>
+</html>
