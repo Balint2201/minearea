@@ -1,2 +1,2 @@
-# [MineArea](https://balint2201.github.io/minearea/)
+# [MineArea](https://minearea.xyz/)
 A MineArea nyílt forráskódú weboldala.
