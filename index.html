@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://raw.githubusercontent.com/Balint2201/minearea/main/tesztweb/img/MA.png" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./materialize.min.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="./mycss.css">
+    <link href="https://minearea.xyz/archive/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://minearea.xyz/archive/css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <script src="https://minearea.xyz/archive/95a2a01cfe.js" ></script>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <style type="text/css">
+       .mobileHide { display: inline;}
+       /* Smartphone Portrait and Landscape */
+       @media only screen
+       and (min-device-width : 320px)
+       and (max-device-width : 500px){  .mobileHide { display: none;}}
+    </style>
+    <style type="text/css">
+   .mobileShow { display: none;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){ .mobileShow { display: inline;}}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        MineArea
+    </title>
+    <link rel="icon" href="https://raw.githubusercontent.com/Balint2201/minearea/main/tesztweb/img/MA.png">
+
+</head>
+  <body class="grey darken-4 sans-serif white-text">
+    <div class="mobileHide">
+    <div class="navbar-fixed" style="position:absolute">
+      <nav style="height:50px;">
+        <div class="nav-wrapper grey darken-4 drop-shadow">
+          <div class="container">
+            <ul id="nav-mobile" class="left" style="margin-top:-7px;">
+            <a href="https://minearea.xyz/"><img src="https://raw.githubusercontent.com/Balint2201/minearea/main/tesztweb/img/MA.png" class="brand-logo" style="height: 40px; margin-top: 5px;"></a>
+            </ul>
+            <ul id="nav-mobile" class="right" style="margin-top:-7px;">
+                <li>Online játékosok: <b><span data-playercounter-ip="play.minearea.xyz">⚙️</span></b></li>
+              <li><a href="https://dc.minearea.xyz/">Discord</a></li>
+              <li><a onclick="copyText()">IP cím</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="title-parallax" class="parallax-container transition-medium vignette" style="height:100vh;">
+      <div class="container valign height-100">
+        <div id="particles-js" style="height:100%;width:100%;position:absolute;"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1894" height="838"></canvas></div>
+        <h3 id="title-text" class="grey-text text-lighten-3 monospace center" style="margin-top: 29.2px; margin-bottom: 17.52px;">MineArea</h3>
+        </div>
+      <div class="parallax">
+        <img src="https://raw.githubusercontent.com/Balint2201/minearea/main/tesztweb/img/bg.jpg" style="transform: translate3d(-50%, 347.799px, 0px); opacity: 1;">
+      </div>
+    </div>
+
+    <div class="container top-margin-big">
+      <div class="row">
+        <div class="col l6 m12">
+          <h4 class="blue-text text-accent-4 monospace bold text-shadow">Rólunk</h4>
+          <p>
+            A MineArea egy RolePlay alapú Minecraft szerver, ahol sok más játékmóddal is találkozhattok a jövőben. A BuildBattle játékmód már elérhető, további minigamek hamarosan érkeznek. A szerver megpróbál nem pay-to-win lenni, így minden rangunk olcsó!
+          </p>
+        </div>
+        <div class="col l6 m12">
+          <h4 class="blue-text text-accent-4 monospace bold text-shadow">Szerver Bemutató</h4>
+          <iframe width="460" height="259" src="https://www.youtube.com/embed/6IqWXU9hbWA" title="YouTube videó" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container top-margin">
+      <h4 class="blue-text text-accent-4 monospace bold text-shadow">Szerver információk</h4>
+      <div class="row">
+        <div class="col l6 m12">
+          <h6 class="blue-text text-accent-4 monospace bold text-shadow">RolePlay</h6>
+          <ul class="browser-default blue-bullets">
+            <li>A szerverünkön munkákat vehetsz fel.</li>
+            <li>Alapíthatsz munkahelyet és szabadon kereskedhetsz a játékosokkal.</li>
+            <li>A szervereinket globális Economy rendszer ven, így farmolhatsz pénzt a RolePlay-en a BuildBattle-re vagy fordítva.</li>
+            <li>Csatlakozz a <a href="https://dc.minearea.xyz/" class="blue-text text-accent-3 tooltipped" data-position="bottom" data-tooltip="Kattints a csatlakozáshoz!">Discord szerverünkre</a> ahol segítséget kaphatsz vagy kérdezhetsz tőlünk.</li>
+          </ul>
+        </div>
+        <div class="col l6 m12">
+          <h6 class="blue-text text-accent-4 monospace bold text-shadow">BuildBattle</h6>
+          <ul class="browser-default blue-bullets">
+            <li>A szerveren több téma alapú teleken építhettek.</li>
+            <li>Megmérkőzhettek egymás ellen. Az nyer aki a legjobban épít</li>
+            <li>2 főtől 8 főig terjedő arénák.</li>
+            <li>Könnyű NPC-s és táblás csatlakozás.</li>
+            <li>Eseményekhez igazított témák. (pl. Halooween, karácsony, stb.)</li>
+            <li>Bármilyen kliensből csatlakozhatsz.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container top-margin">
+      <h4 class="blue-text text-accent-4 monospace bold text-shadow">További információk</h4>
+      <div class="row">
+        <div class="col l4 offset-l2 m6">
+
+          <a href="https://yoursit.ee/balint2201" class="grey darken-4 sans-serif white-text">
+            <div class="card horizontal grey darken-4 hoverable waves-effect waves-blue height-100">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <span class="card-title blue-text text-accent-4 monospace bold text-shadow">Balint2201</span>
+                  <p>A szerver altulajdonosa és fő fejlesztője.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <div class="col l4 m6">
+
+          <a href="https://yoursit.ee/minearea" class="grey darken-4 sans-serif white-text">
+            <div class="card horizontal grey darken-4 hoverable waves-effect waves-blue height-100">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <span class="card-title blue-text text-accent-4 monospace bold text-shadow">Elosztó</span>
+                  <p>A szerver YourSitee-s elosztója, ahol a fontos linkek vannak.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l4 offset-l2 m6">
+
+          <a href="https://dc.minearea.xyz" class="grey darken-4 sans-serif white-text">
+            <div class="card horizontal grey darken-4 hoverable waves-effect waves-blue height-100">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <span class="card-title blue-text text-accent-4 monospace bold text-shadow">Discord szerver</span>
+                  <p>A szerver Discord-ja, ahol segítünk ha valahol elakadtál.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+        </div>
+        <div class="col l4 m6">
+
+          <a onclick="copyText()" class="grey darken-4 sans-serif white-text">
+            <div class="card horizontal grey darken-4 hoverable waves-effect waves-blue height-100">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <span class="card-title blue-text text-accent-4 monospace bold text-shadow">IP cím</span>
+                  <p>Kattints a másoláshoz! Szerver verziója: 1.20.X</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+                    ("play.minearea.xyz");
+            }
+        </script>
+          
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer grey darken-4 drop-shadow">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+              </div>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="blue-text text-accent-4 monospace bold text-shadow">Linkek</h5>
+            <ul>
+              <li><a class="blue-text text-darken-3" href="https://dc.minearea.xyz" target="”_blank”">Discord</a></li>
+              <li><a class="deep-purple-text text-darken-1" href="https://yoursit.ee/minearea" target="”_blank”">Elosztó</a></li>
+              <li><a class="pink-text text-darken-3" href="https://bolt.minearea.xyz" target="”_blank”">Bolt</a></li>
+              <li><a class="blue-text text-darken-4" href="https://paypal.me/foxcompostor" target="”_blank”">PayPal támogatás</a></li>
+            </ul>
+          </div>
+        </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2024 MineArea | Whyver Social Network - Minden jog fenntartva. All rights revesed.
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script type="text/javascript" src="data.json"></script> -->
+    <script type="text/javascript" src="./particles.min.js"></script>
+    <script type="text/javascript" src="./TweenMax.min.js"></script>
+    <script type="text/javascript" src="./materialize.min.js"></script>
+    <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+    <script>
+      var data;
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems);
+
+        setTimeout(function(){
+          document.getElementById("title-parallax").classList.remove("grey");
+          document.getElementById("title-parallax").classList.remove("darken-4");
+          document.getElementById("title-parallax").classList.add("vignette");
+          // document.getElementById("title-parallax").classList.add("add-property");
+        }, 1000);
+
+        setTimeout(function() {
+          $("#title-text").removeClass("opacity-0");
+          setTimeout(function() {
+            $("#title-text").removeClass("transition-medium");
+
+            $("#title-text").each(function(index, element){
+              var animation = TweenMax.to(this, 0.2, {
+                className: '+= superShadow',
+                marginTop: '-10px',
+                marginBottom: '10px',
+                ease: Power1.easeIn,
+                paused:true
+              });
+              element.animation = animation;
+            })
+          }, 1000);
+        }, 1500);
+
+        particlesJS.load('particles-js', 'particles.js-master/particlesjs-config.json', function() {
+          console.log('callback - particles.js config loaded');
+        });
+      });
+      
+      function doSetTimeout(i, j, text) {
+        setTimeout(function() {
+          document.getElementById("title-text").innerHTML = text.substring(0, i);
+        }, 100 * (i+1-j));
+      }
+
+      $("#title-text").hover(function(){
+        if (this.animation == undefined) return;
+        this.animation.play()
+      }, function(){
+        if (this.animation == undefined) return;
+        this.animation.reverse();
+      })
+    </script>
+  
+<div class="material-tooltip"><div class="tooltip-content"></div></div><div class="material-tooltip"><div class="tooltip-content"></div></div><div class="material-tooltip"><div class="tooltip-content"></div></div><div class="material-tooltip"><div class="tooltip-content"></div></div>
+  </div>
+
+
+    <div class="mobileShow">
+
+<div class="bg-overlay"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 p-0">
+<div class="d-flex flex-column min-vh-100 justify-content-center px-md-5 py-5 px-4">
+<div class="title-heading text-center my-auto">
+<div class="coming-soon fw-bold display-3 text-white">
+<span>._.</span>
+</div>
+<p class="text-white para-desc mx-auto mt-2 mb-0">Bocs haver, de ez az oldal csak gépről elérhető!</p>
+</div>
+<div class="text-center footer">
+<p class="mb-0 text-reset">© <script>document.write(new Date().getFullYear())</script> MineArea</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script src="https://minearea.xyz/js/bootstrap.bundle.min.js"></script>
+<script src="https://minearea.xyz/js/easy_background.js"></script>
+<script src="https://minearea.xyz/js/app.js"></script>
+<script>
+            easy_background("#home",
+                {
+                    slide: ["img/bg.jpg"],
+                    delay: [4000]
+                }
+            );
+        </script>
+    </div>
+  </body>
+</html>
